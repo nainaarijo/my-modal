@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal with HTML CSS and Javascript</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <button id="openModal" onclick="openModal()" class="openModalbtn">Open Modal</button>
+    <div id="myModal" class="Modal">
+        <div class="content">
+            <div class="header">
+                <h1>Modal Header here</h1>
+                <span onclick="closeModal()" id="closeModal" class="close">&times;</span>
+            </div>
+            <hr>
+            <p>I'm Naina Arijo, a passionate web developer. I specialize in creating visually appealing and
+                user-friendly websites using HTML, CSS, and JavaScript. With a strong foundation in web design and
+                development, I enjoy building projects that provide excellent user experiences. I am always eager to
+                learn new technologies and take on exciting challenges.</p>
+            <hr>
+            <div class="footer">
+                <button onclick="closeModal()" class="close-btn">Close</button>
+                <button onclick="closeModal()" id="closeModal" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

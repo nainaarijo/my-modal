@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(177, 163, 155);
+}
+
+.Modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .3);
+    animation: modal 20s cubic-bezier(0.76, 0, 0.24, 1) 0s
+}
+
+.openModalbtn{
+    border: none;
+    padding: 10px 13px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 10px;
+    margin-left:45%; 
+    margin-top: 50px;
+}
+
+.openModalbtn:hover{
+    cursor: pointer;
+}
+
+.content{
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close{
+    float: right;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(rgb(113, 99, 99), green, blue);
+   
+}
+
+.close:hover{
+    cursor: pointer;
+    font-weight: 900;
+    background-color: rgba(123, 105, 105, .4);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+} 
+
+.close-btn{
+    border: none;
+    padding: 15px 20px;
+    background-color: brown;
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.close-btn:hover{
+    cursor: pointer;
+}
+
+.cancel-btn{
+    border: none;
+    padding: 15px 25px;
+    background-color: rgb(98, 169, 205);
+    margin: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cancel-btn:hover{
+    cursor: pointer;
+}
+
+
+
+
+@keyframes modal {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
